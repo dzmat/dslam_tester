@@ -31,14 +31,14 @@
     <USERDEFINES value="_DEBUG"/>
     <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
     <MAINSOURCE value="dslam_test.cpp"/>
-    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;&quot;c:\program files\Borland\CBuilder6\Projects&quot;;C:\work\prg\work\dslam-test"/>
-    <LIBPATH value="$(BCB)\lib\obj;$(BCB)\lib;&quot;c:\program files\Borland\CBuilder6\Projects&quot;"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;&quot;$(BCB)\Projects&quot;;C:\work\prg\work\dslam-test"/>
+    <LIBPATH value="$(BCB)\lib\obj;$(BCB)\lib;&quot;$(BCB)\Projects&quot;"/>
     <WARNINGS value="-w-par"/>
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
     <IDLCFLAGS value="-I$(BCB)\include -I$(BCB)\include\vcl 
-      -I&quot;c:\program files\Borland\CBuilder6\Projects&quot; 
+      -I&quot;$(BCB)\Projects&quot; 
       -IC:\work\prg\work\dslam-test -src_suffix cpp -D_DEBUG -boa"/>
     <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
       -tW -tWM"/>
@@ -94,17 +94,17 @@ ProductVersion=1.0.0.0
 Comments=
 
 [Excluded Packages]
-c:\program files\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+$(BCB)\Bin\dclite60.bpl=Borland Integrated Translation Environment
 
 [HistoryLists\hlIncludePath]
 Count=2
-Item0=$(BCB)\include;$(BCB)\include\vcl;c:\program files\Borland\CBuilder6\Projects;C:\work\prg\work\dslam-test
-Item1=C:\Program Files\Borland\CBuilder6\Projects;C:\work\prg\work\dslam-test;$(BCB)\include;$(BCB)\include\vcl
+Item0=$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Projects;C:\work\prg\work\dslam-test
+Item1=$(BCB)\Projects;C:\work\prg\work\dslam-test;$(BCB)\include;$(BCB)\include\vcl
 
 [HistoryLists\hlLibraryPath]
 Count=2
-Item0=$(BCB)\lib\obj;$(BCB)\lib;c:\program files\Borland\CBuilder6\Projects
-Item1=C:\Program Files\Borland\CBuilder6\Projects;C:\work\prg\work\dslam-test;$(BCB)\lib\obj;$(BCB)\lib
+Item0=$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\Projects
+Item1=$(BCB)\Projects;C:\work\prg\work\dslam-test;$(BCB)\lib\obj;$(BCB)\lib
 
 [HistoryLists\hlDebugSourcePath]
 Count=1
