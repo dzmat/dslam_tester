@@ -82,6 +82,24 @@ void port_result::init(TWinControl* parent,int i,
     set_res2(RES_NONE);
 }
 
+void port_result::destroy(){
+    delete m;m=NULL;
+    delete l;l=NULL;
+    delete b;b=NULL;
+    delete sel;sel=NULL;
+};
+
+void port_result::set_res2(E_RESULTS r)
+{
+    switch (r){
+        case RES_OK:        sel->Font->Color=TColor(0x0000AA00);break;
+        case RES_WAIT:      sel->Font->Color=TColor(0x00AAAAAA);break;
+        case RES_DEAD:      sel->Font->Color=TColor(0x000000FF);break;
+        case RES_HALFDEAD:  sel->Font->Color=TColor(0x00AA00AA);break;
+        default: sel->Font->Color=TColor(0x00000000);break;
+    };
+};
+
 void port_result::hide()
 {
     m->Enabled=false;

@@ -15,15 +15,7 @@ public:
         destroy();
     };
     enum E_RESULTS{RES_OK,RES_WAIT,RES_DEAD,RES_HALFDEAD,RES_NONE};
-    void set_res2(E_RESULTS r){
-        switch (r){
-            case RES_OK:        sel->Font->Color=TColor(0x0000AA00);break;
-            case RES_WAIT:      sel->Font->Color=TColor(0x00AAAAAA);break;
-            case RES_DEAD:      sel->Font->Color=TColor(0x000000FF);break;
-            case RES_HALFDEAD:  sel->Font->Color=TColor(0x00AA00AA);break;
-            default: sel->Font->Color=TColor(0x00000000);break;
-        };
-    };
+    void set_res2(E_RESULTS r);
     void init(TWinControl* parent,int i,TNotifyEvent OnClick_check,TNotifyEvent OnClick_select);
     void hide();
     void show();
@@ -36,12 +28,7 @@ public:
     void add_string(const AnsiString& s){
         m->Lines->Add(s);
     };
-    void destroy(){
-        delete m;m=NULL;
-        delete l;l=NULL;
-        delete b;b=NULL;
-        delete sel;sel=NULL;
-    };
+    void destroy();
 private:
     //TMemo* m;
     TRichEdit* m;
@@ -51,6 +38,7 @@ private:
 };
 
 
+//---------------------------------------------------------------------------
 
 
 class Task{
