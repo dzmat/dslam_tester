@@ -37,8 +37,7 @@
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
-    <IDLCFLAGS value="-I$(BCB)\include -I$(BCB)\include\vcl 
-      -I&quot;$(BCB)\Projects&quot; 
+    <IDLCFLAGS value="-I$(BCB)\include -I$(BCB)\include\vcl -I&quot;$(BCB)\Projects&quot; 
       -IC:\work\prg\work\dslam-test -src_suffix cpp -D_DEBUG -boa"/>
     <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
       -tW -tWM"/>

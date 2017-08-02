@@ -357,7 +357,7 @@ object Form1: TForm1
           Left = 924
           Top = 104
           Width = 97
-          Height = 25
+          Height = 21
           EditLabel.Width = 89
           EditLabel.Height = 13
           EditLabel.Caption = 'Attainable Rate Ds'
@@ -373,7 +373,7 @@ object Form1: TForm1
           Left = 924
           Top = 152
           Width = 97
-          Height = 25
+          Height = 21
           EditLabel.Width = 62
           EditLabel.Height = 13
           EditLabel.Caption = 'Ds Line Rate'
@@ -389,7 +389,7 @@ object Form1: TForm1
           Left = 924
           Top = 200
           Width = 97
-          Height = 25
+          Height = 21
           EditLabel.Width = 89
           EditLabel.Height = 13
           EditLabel.Caption = 'Attainable Rate Us'
@@ -405,7 +405,7 @@ object Form1: TForm1
           Left = 924
           Top = 248
           Width = 97
-          Height = 25
+          Height = 21
           EditLabel.Width = 62
           EditLabel.Height = 13
           EditLabel.Caption = 'Us Line Rate'
@@ -421,9 +421,9 @@ object Form1: TForm1
           Left = 924
           Top = 304
           Width = 97
-          Height = 25
-          EditLabel.Width = 54
-          EditLabel.Height = 26
+          Height = 21
+          EditLabel.Width = 95
+          EditLabel.Height = 13
           EditLabel.Caption = 'DS Line Attenuation'
           EditLabel.WordWrap = True
           LabelPosition = lpAbove
@@ -437,9 +437,9 @@ object Form1: TForm1
           Left = 924
           Top = 360
           Width = 97
-          Height = 25
-          EditLabel.Width = 54
-          EditLabel.Height = 26
+          Height = 21
+          EditLabel.Width = 95
+          EditLabel.Height = 13
           EditLabel.Caption = 'US Line Attenuation'
           EditLabel.WordWrap = True
           LabelPosition = lpAbove
