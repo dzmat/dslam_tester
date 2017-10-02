@@ -448,6 +448,15 @@ object Form1: TForm1
           Text = '10'
           OnChange = LabeledEditParamChange
         end
+        object btApplyLimits: TButton
+          Left = 920
+          Top = 392
+          Width = 105
+          Height = 33
+          Caption = 'Apply limits'
+          TabOrder = 8
+          OnClick = btApplyLimitsClick
+        end
       end
     end
     object PageLog: TTabSheet

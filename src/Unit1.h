@@ -60,6 +60,7 @@ __published:	// IDE-managed Components
     TLabeledEdit *LabeledEdit4;
     TLabeledEdit *LabeledEdit5;
     TLabeledEdit *LabeledEdit6;
+    TButton *btApplyLimits;
     void __fastcall btOpenLPTClick(TObject *Sender);
     void __fastcall btWriteLPTClick(TObject *Sender);
     void __fastcall btLEDtestClick(TObject *Sender);
@@ -92,6 +93,7 @@ __published:	// IDE-managed Components
     void __fastcall bt_SendCommandsClick(TObject *Sender);
     void __fastcall btClearQueueClick(TObject *Sender);
     void __fastcall LabeledEditParamChange(TObject *Sender);
+    void __fastcall btApplyLimitsClick(TObject *Sender);
 
 private:
     unsigned char current_port;

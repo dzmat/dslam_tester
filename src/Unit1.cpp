@@ -441,3 +441,10 @@ void __fastcall TForm1::LabeledEditParamChange(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TForm1::btApplyLimitsClick(TObject *Sender)
+{
+    // do something
+}
+
+//---------------------------------------------------------------------------
+
