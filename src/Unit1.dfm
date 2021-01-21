@@ -18,8 +18,8 @@ object Form1: TForm1
   object PageControl1: TPageControl
     Left = 0
     Top = 0
-    Width = 1041
-    Height = 690
+    Width = 1033
+    Height = 678
     ActivePage = PageResults
     Align = alClient
     TabIndex = 2
@@ -118,8 +118,8 @@ object Form1: TForm1
       Caption = 'Tasks'
       ImageIndex = 1
       DesignSize = (
-        1033
-        662)
+        1025
+        650)
       object Label2: TLabel
         Left = 14
         Top = 36
@@ -322,8 +322,8 @@ object Form1: TForm1
       object ScrollBox1: TScrollBox
         Left = 0
         Top = 0
-        Width = 1033
-        Height = 662
+        Width = 1025
+        Height = 650
         VertScrollBar.Tracking = True
         Align = alClient
         TabOrder = 0
@@ -463,8 +463,8 @@ object Form1: TForm1
       Caption = 'log'
       ImageIndex = 3
       DesignSize = (
-        1033
-        662)
+        1025
+        650)
       object Memo1: TMemo
         Left = 8
         Top = 4
