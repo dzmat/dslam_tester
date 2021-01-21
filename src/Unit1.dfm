@@ -488,12 +488,20 @@ object Form1: TForm1
   object Timer1: TTimer
     Enabled = False
     OnTimer = Timer1Timer
-    Left = 992
-    Top = 40
+    Left = 960
+    Top = 488
   end
   object Timer_heartbeat: TTimer
     OnTimer = Timer_heartbeatTimer
-    Left = 960
-    Top = 40
+    Left = 928
+    Top = 488
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 992
+    Top = 488
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 992
+    Top = 520
   end
 end

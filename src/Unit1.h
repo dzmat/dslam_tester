@@ -10,6 +10,7 @@
 #include <ExtCtrls.hpp>
 #include <ComCtrls.hpp>
 #include <Buttons.hpp>
+#include <Dialogs.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -61,6 +62,8 @@ __published:	// IDE-managed Components
     TLabeledEdit *LabeledEdit5;
     TLabeledEdit *LabeledEdit6;
     TButton *btApplyLimits;
+    TOpenDialog *OpenDialog1;
+    TSaveDialog *SaveDialog1;
     void __fastcall btOpenLPTClick(TObject *Sender);
     void __fastcall btWriteLPTClick(TObject *Sender);
     void __fastcall btLEDtestClick(TObject *Sender);

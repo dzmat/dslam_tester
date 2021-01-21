@@ -301,21 +301,24 @@ void __fastcall TForm1::bt_Profile8Click(TObject *Sender)
 void __fastcall TForm1::btExportClick(TObject *Sender)
 {
     FILE* f;
-    f=fopen("result.txt","w");
-    if (!f){
-        Application->MessageBox("не могу открыть выходной файл","Ошибка",MB_OK);
-        return;
-    }
-    for(int i=0;i<64;i++){
-        fprintf(f,"\n------ port %d ------------------------\n",i+1);
-        TStrings* l= result_arr[i].lines();
-        int c=l->Count;
-        for(int j=0;j<c;++j){
-            AnsiString s=l->Strings[j];
-            fprintf(f,"%s\n",s.c_str());
+    if(SaveDialog1->Execute()){
+        AnsiString fname=OpenDialog1->FileName;
+        f=fopen(fname.c_str(),"w");
+        if (!f){
+            Application->MessageBox("не могу открыть выходной файл","Ошибка",MB_OK);
+            return;
         }
+        for(int i=0;i<64;i++){
+            fprintf(f,"\n------ port %d ------------------------\n",i+1);
+            TStrings* l= result_arr[i].lines();
+            int c=l->Count;
+            for(int j=0;j<c;++j){
+                AnsiString s=l->Strings[j];
+                fprintf(f,"%s\n",s.c_str());
+            }
+        }
+        fclose(f);
     }
-    fclose(f);
 }
 //---------------------------------------------------------------------------
 
@@ -367,8 +370,22 @@ Application->MessageBox("wheel ","Form1",MB_OK);
 
 void __fastcall TForm1::btImportClick(TObject *Sender)
 {
+
+    FILE* f;
+    AnsiString fname;
+    if(OpenDialog1->Execute()){
+        fname=OpenDialog1->FileName;
+    } else {
+        return;
+    }
     TStringList *ls=new TStringList();
-    ls->LoadFromFile("result.txt");
+    try{
+        ls->LoadFromFile(fname.c_str());
+    }
+    catch(const EFOpenError &oe){
+        Application->MessageBox("Ошибка открытия файла","Ощибка");
+        return;
+    }
     const char* prefix="------ port ";
     for(int i=0;i<64;++i){
         result_arr[i].hide();
