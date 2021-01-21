@@ -2,3 +2,4 @@ bin/
 *.~*
 src/backup
 src/result.txt
+*.bak
