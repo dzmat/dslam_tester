@@ -303,7 +303,7 @@ void __fastcall TForm1::btExportClick(TObject *Sender)
     FILE* f;
     if(SaveDialog1->Execute()){
         AnsiString fname=OpenDialog1->FileName;
-        f=fopen(fname.c_str(),"w");
+        f=fopen(fname.c_str(),"wt");
         if (!f){
             Application->MessageBox("не могу открыть выходной файл","Ошибка",MB_OK);
             return;
